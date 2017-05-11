@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
+use App\Token;
 class CreateTokensTable extends Migration
 {
     /**
@@ -17,9 +17,16 @@ class CreateTokensTable extends Migration
             $table->increments('id');
             $table->string('token');
             $table->string('name');
-            $table->timestamps();
         });
+
+    $data = array(
+    array('id'=> 1, 'token'=> 'M123', 'name'=>'Some'),
+    array('id'=> 2, 'token'=> 'T123', 'name'=>'Any'),
+    );
+   DB::table('tokens')->insert($data); // Query Builder
     }
+
+
 
     /**
      * Reverse the migrations.
