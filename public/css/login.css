@@ -1,0 +1,19 @@
+body {
+  outline: 0;
+  background-image: url("../img/my_bg_blur.jpg");
+  text-decoration: none;
+}
+.dash-title {
+  margin-top: 60px;
+  text-align: center;
+  color: #25c880;
+  font-size: 30px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.title{
+  transform: scale(0.8, 0.8);
+}
+
+.box-img{
+  transform: scale(0.7, 0.7);
+}
